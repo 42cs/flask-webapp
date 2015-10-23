@@ -1,0 +1,9 @@
+{% extends "layout.html" %}
+{% block content %}
+	<h1> Here's whats avaialble today at {{ name }} </h1>
+	<ul> 
+    {% for item in items %}
+		<p> {{ item }} </p>
+	{% endfor %}
+	</ul>
+{% endblock %}
